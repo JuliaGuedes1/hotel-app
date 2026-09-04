@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ReservationListComponent } from '../reservation-list/reservation-list.component';
 import { ReservationFormComponent } from '../reservation-form/reservation-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { AppRoutingModule } from "../app-routing.module";
+import { RouterModule } from '@angular/router';
+import { HomeModule } from '../home/home.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+    AppRoutingModule,
+    RouterModule,
+    HomeModule
+]
 })
 export class ReservationModule { }
